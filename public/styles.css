@@ -1,0 +1,36 @@
+
+#messages > li:nth-child(odd) {
+  background: #077eff;
+  color: white;
+  width: fit-content;
+  padding-block: 15px;
+  padding-inline: 10px;
+  border-radius: 10px;
+}
+#messages > li:nth-child(even) {
+  background: white;
+  width: fit-content;
+  padding-block: 15px;
+  padding-inline: 10px;
+  border-radius: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
