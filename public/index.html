@@ -27,7 +27,7 @@
                     <div id="menu-icon">
                         <svg stroke="currentColor" onclick="openMenu()" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="h-4 w-4 sm:h-5 sm:w-5 cursor-pointer" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg>
                     </div>
-                    <div id="menu" class="absolute top-[35px] sm:top-[40px] right-[1px] bg-black/80 text-white w-[fit-content] rounded-md px-5 py-5 flex flex-col gap-1 hidden">
+                    <div id="menu" class="absolute top-[35px] sm:top-[40px] right-[1px] bg-black/80 text-white w-[fit-content] rounded-md px-5 py-5 flex flex-col gap-1 z[50] hidden">
                         <div class="cursor-pointer text-[1rem] whitespace-nowrap hover:bg-[#077eff] px-4 py-2 rounded-md transition-all select-none">View Story Boards</div>
                         <div class="cursor-pointer text-[1rem] whitespace-nowrap hover:bg-[#077eff] px-4 py-2 rounded-md transition-all select-none">View Time Table</div>
                         <div onclick="closeChat()" class="cursor-pointer text-[1rem] whitespace-nowrap hover:bg-[#077eff] px-4 py-2 rounded-md transition-all select-none">Close Chat</div>
@@ -36,9 +36,9 @@
             </header>
 
             <div class="">
-                <div class="chat-body relative ">
-                    <div id="chats" class="h-[70vh] bg-[url('./bg.jpg')] bg-cover bg-center my-2 overflow-y-scroll rounded-md z-[50]">
-                        <ul id="messages" class="flex flex-col gap-2 px-4 py-4 sm:px-6 sm:py-6 z-[100]">
+                <div class="chat-body">
+                    <div id="chats" class="h-[70vh] bg-[url('./bg.jpg')] bg-cover bg-center my-2 overflow-y-scroll rounded-md">
+                        <ul id="messages" class="flex flex-col gap-2 px-4 py-4 sm:px-6 sm:py-6">
                             <!-- dynamic chats will go here -->
                         </ul>
                     </div>
